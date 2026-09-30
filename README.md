@@ -42,11 +42,12 @@ That is the core purpose of Sentinel.
 
 ### The Four Scenarios
  
-Scenario	                What the viewer tests	                        
-Silent Grid	                Loss of communications	              
-Redline Cooling	       Thermal capacity loss during demand	       
-Doomsday	           Two faults arriving before recovery	    
-Workshop Ghost	           Human decision overload	          
+| Scenario | What the viewer tests | What they should observe |
+|---|---|---|
+| **Silent Grid** | Loss of communications | Physical systems remain operational, but navigation and operations degrade |
+| **Redline Cooling** | Thermal capacity loss during demand | A local cooling problem increases system-wide pressure |
+| **Doomsday** | Two faults arriving before recovery | Recovery started too early creates additional system pressure |
+| **Workshop Ghost** | Human decision overload | Machines remain healthy while the operator becomes the bottleneck |          
 
 ### What a Viewer Actually Does
 
@@ -76,14 +77,6 @@ It just provides a controlled environment for examining failure propagation and 
 
 3. Inspect the system state
 The viewer can examine the condition of individual system nodes.
-
-For example:
-ENERGY       STRESS
-COOLING      CRITICAL
-COMMS        STABLE
-NAVIGATION   STABLE
-OPERATIONS   STRESS
-CONTAINMENT  STRESS
 
 This allows the viewer to reason about relationships between components.
 For example:
