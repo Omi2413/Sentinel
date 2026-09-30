@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>SENTINEL — Scenario Lab</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="ambient a"></div><div class="ambient b"></div>
+<header>
+  <div class="brand"><div class="mark"><i></i><i></i><i></i></div><div><b>SENTINEL</b><small>SCENARIO LAB</small></div></div>
+  <div class="top">● LOCAL SIMULATION <span></span> NO LIVE SYSTEMS</div>
+</header>
+<main>
+<section class="hero">
+  <div><label>SCENARIO ENGINE / 07</label>
+  <h1>When one system bends,<br><em>what breaks next?</em></h1>
+  <div class="hero-fragments">
+    <span>Explore cascading failures inside the Sentinel Grid.</span>
+    <span>Change the pressure.</span>
+    <span>Read the chain.</span>
+    <span>Find the recovery point.</span>
+</div></div>
+  <aside><small>WORKSHOP LOG</small><strong>"Build the system that survives the second problem."</strong><em>— workshop principle / Tony's notebook</em></aside>
+</section>
+<section class="workspace">
+<aside class="left">
+  <div class="heading"><div><label>01 / SCENARIOS</label><h2>Pick the pressure.</h2></div><span>04</span></div>
+  <div id="scenarios"></div>
+  <div class="note"><b>DOOMSDAY INDEX</b><p>Fictional stress modeling. Higher values mean more interacting dependencies, not real-world risk.</p></div>
+</aside>
+<section class="deck">
+  <div class="deckhead"><div><label>02 / COMMAND DECK</label><h2 id="title">Select a scenario</h2><p id="desc">The grid is waiting for a stress event.</p></div>
+  <button id="run" disabled>↗ RUN SIMULATION</button></div>
+  <div class="metrics">
+    <article class="heroMetric"><label>RESILIENCE</label><strong id="res">—</strong><small id="resLabel">Awaiting scenario</small><div><i id="meter"></i></div></article>
+    <article><label>SYSTEM PRESSURE</label><strong id="pressure">—</strong><small>simulated load</small></article>
+    <article><label>DEPENDENCY EXPOSURE</label><strong id="exposure">—</strong><small>interlinked subsystems</small></article>
+    <article><label>RECOVERY WINDOW</label><strong id="recovery">—</strong><small>simulated cycles</small></article>
+  </div>
+  <div class="card">
+    <div class="cardhead"><div><label>03 / SYSTEM CONSTELLATION</label><h3>Sentinel Grid</h3></div><div class="legend">● stable &nbsp; ● stressed &nbsp; ● critical</div></div>
+    <div id="nodes" class="nodes"></div>
+  </div>
+  <div class="lower">
+    <div class="card tracecard"><div class="cardhead"><label>04 / CASCADE TRACE</label><span id="state">SIMULATION IDLE</span></div><div id="trace" class="trace"><div class="empty">Run a scenario to reveal the cascade.</div></div></div>
+    <div class="card"><div class="cardhead"><label>05 / RECOVERY LOGIC</label><span>LOCAL MODEL</span></div><div id="insight" class="insight"><b>◎</b><h3>Choose your first failure.</h3><p>The interesting part is not the first failure. It is the dependency you forgot existed.</p></div></div>
+  </div>
+</section>
+</section>
+<section class="principles">
+  <div><b>01</b><strong>Observe</strong><small>Find the weak link.</small></div>
+  <div><b>02</b><strong>Trace</strong><small>Follow the dependency.</small></div>
+  <div><b>03</b><strong>Recover</strong><small>Protect the next layer.</small></div>
+  <div class="gold"><b>ARC</b><strong>Not a prediction engine.</strong><small>A thinking tool.</small></div>
+</section>
+</main>
+<footer><span>SENTINEL / SCENARIO LAB</span><span>FICTIONAL DATA · LOCAL ONLY · NO LIVE SYSTEMS</span></footer>
+<script src="app.js"></script>
+</body></html>
